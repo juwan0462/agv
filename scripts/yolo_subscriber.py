@@ -9,7 +9,7 @@ from cv_bridge import CvBridge
 from std_msgs.msg import String
 
 # YOLO 모델 로드
-model = YOLO("/home/vboxuser/Downloads/best.pt")
+model = YOLO("/home/young/Downloads/best.pt")
 bridge = CvBridge()
 
 prev_time = time.time()
