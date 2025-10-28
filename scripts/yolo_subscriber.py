@@ -28,7 +28,7 @@ yellow_lower = np.array([20, 100, 100])
 yellow_upper = np.array([30, 255, 255])
 
 # /cmd_vel 퍼블리셔 (String 타입)
-decision_pub = rospy.Publisher('/cmd_vel', String, queue_size=10)
+decision_pub = rospy.Publisher('/mission/decision', String, queue_size=10)
 
 def detect_colors(frame):
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
